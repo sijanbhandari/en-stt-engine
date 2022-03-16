@@ -1,0 +1,14 @@
+setuptools
+stt
+black
+ffmpeg-python
+sanic
+pyhocon
+numpy
+fastapi
+pydantic
+uvicorn
+httpx
+gunicorn
+httplib2
+python-multipart
