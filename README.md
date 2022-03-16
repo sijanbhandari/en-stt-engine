@@ -35,6 +35,6 @@ To use the api,
 
 use in postman with the body sending a file as a .wav file with the file keyword
 
-Example below
+Example below here
 
 ![postman demo](stt.png)
