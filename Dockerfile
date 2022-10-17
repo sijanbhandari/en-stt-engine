@@ -17,11 +17,9 @@ RUN wget https://github.com/sijanbhandari/en-stt-engine/releases/download/v0.9/l
 # copy every content from the local file to the image
 COPY . /app
 
-EXPOSE 80
-
-RUN pip3 --no-cache-dir install gunicorn
+RUN pip3 --no-cache-dir install uvicorn
 
 # command line version
 # CMD ["./stt.py"]
 
-CMD ["gunicorn", "--access-logfile=-", "-t", "120", "-b", "0.0.0.0:80", "main:app"]
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
