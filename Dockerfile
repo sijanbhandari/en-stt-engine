@@ -1,6 +1,8 @@
 # start by pulling the python image
 FROM python:3.8-alpine
 
+RUN wget https://github.com/sijanbhandari/en-stt-engine/releases/download/v0.9/large_vocabulary.scorer
+
 # copy the requirements file into the image
 COPY ./requirements.txt /app/requirements.txt
 
